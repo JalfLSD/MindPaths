@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "semantics_server", "semantics_server\semantics_server.pyproj", "{7A009A52-17DD-4735-A5DE-A607FD70FB98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{450388C7-A441-410C-80A0-67146C6F0BE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Importer", "Importer\Importer.csproj", "{A19E1AF2-D9A7-48AB-A631-155AC89A2CA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A009A52-17DD-4735-A5DE-A607FD70FB98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A009A52-17DD-4735-A5DE-A607FD70FB98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450388C7-A441-410C-80A0-67146C6F0BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450388C7-A441-410C-80A0-67146C6F0BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450388C7-A441-410C-80A0-67146C6F0BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450388C7-A441-410C-80A0-67146C6F0BE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A19E1AF2-D9A7-48AB-A631-155AC89A2CA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A19E1AF2-D9A7-48AB-A631-155AC89A2CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A19E1AF2-D9A7-48AB-A631-155AC89A2CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A19E1AF2-D9A7-48AB-A631-155AC89A2CA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,209 @@
+@font-face {
+	font-family: 'din_bold';
+	src: url('http://societic.ibercivis.es/semantics/fonts/Din_bold/din_bold.eot'); /* IE9 Compat Modes */
+	src: url('http://societic.ibercivis.es/semantics/fonts/Din_bold/din_bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('http://societic.ibercivis.es/semantics/fonts/Din_bold/din_bold.woff') format('woff'), /* Modern Browsers */
+	     url('http://societic.ibercivis.es/semantics/fonts/Din_bold/din_bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('http://societic.ibercivis.es/semantics/fonts/Din_bold/din_bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'din_regular';
+	src: url('http://societic.ibercivis.es/semantics/fonts/Din_regular/din_regular.eot');
+	src: url('http://societic.ibercivis.es/semantics/fonts/Din_regular/din_regular.eot?#iefix') format('embedded-opentype'),
+	     url('http://societic.ibercivis.es/semantics/fonts/Din_regular/din_regular.woff') format('woff'),
+	     url('http://societic.ibercivis.es/semantics/fonts/Din_regular/din_regular.ttf')  format('truetype'), 
+	     url('http://societic.ibercivis.es/semantics/fonts/Din_regular/din_regular.svg#svgFontName') format('svg'); 
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a{
+	text-decoration: none;
+}
+
+.gameContainer{
+	width: 100%;
+	position: relative;
+	height: 450px; /**/
+	overflow: hidden;
+	z-index:0;  /**/
+}
+
+.clr{
+	clear: both;
+	padding: 0;
+	height: 0;
+	margin: 0;
+}
+
+.support-note span{
+	color: #ac375d;
+	font-size: 15px;
+	display: none;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0;
+}
+.no-cssanimations .support-note span.no-cssanimations,
+.no-csstransforms .support-note span.no-csstransforms,
+.no-csstransforms3d .support-note span.no-csstransforms3d,
+.no-csstransitions .support-note span.no-csstransitions{
+	display: block;
+}
+
+
+/* Jalf adds/changes */
+
+.gameHeader {	
+    font-family: 'din_regular','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	color: grey;
+	overflow: hidden;
+    width:1024px;
+    height:100px;
+    margin-left:auto;
+    margin-right:auto;    
+    border-bottom:solid;
+    border-width:1px;
+    border-color:lightgray;
+    /*border: solid;border-color:black;*/
+    margin-bottom:30px;
+}
+
+.gameFooter {	
+	color: grey;
+	overflow: hidden;
+    width:1024px;
+    margin-left:auto;
+    margin-right:auto;    
+    padding-top: 5px;
+    border-top:solid;
+    border-width:1px;
+    border-color:lightgray;
+    /*border: solid;border-color:black;*/
+}
+
+.gameBody{
+	font-family: 'din_regular','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	/*font-family: 'din_bold';*/
+	font-size: 15px;
+	color: grey;
+	overflow: hidden;
+    width:1024px;
+    height:650px;
+    background-repeat: no-repeat;
+    /*background-image:url('/images/bg.jpg');*/ /*??*/
+    margin-left:auto;
+    margin-right:auto;    
+
+    /*border: solid;border-color:black;*/
+}
+
+.gameHeaderButton {    
+    position:relative;
+    margin-top:4px;
+    overflow: auto;
+    border-style: none;
+    border: 0;
+}
+
+.regularLabel {
+    cursor:default;
+    font-family: 'din_regular','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 15px;
+    color: #2B3126;   
+}
+
+.dialogCaption {
+    cursor:default;
+    font-family:'din_bold','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #2B3126;   
+}
+
+.rowImage {
+    float: left;
+}
+
+.bottomDiv {
+    position: relative;
+    left: 0px;
+    top: -40px;
+    width: 100%;
+}
+.rowDiv {
+    position: relative;
+    left: 0px;
+    top: 20px;
+    left: 45px;
+    padding: 0px;
+}
+
+.rotatedLabel {
+    cursor:default;
+    position:relative;
+    height:auto;
+    margin:0;
+    -ms-transform:rotate(-50deg); /* IE 9 */
+    -moz-transform:rotate(-50deg); /* Firefox */
+    -webkit-transform:rotate(-50deg); /* Safari and Chrome */
+    -o-transform:rotate(-50deg); /* Opera */
+    text-align:right;
+    width:150px;
+    display:block;
+}
+
+.gameProgress {
+    border: 1px;
+    border-color: #B3B3B3;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    height: 9px;
+    background-image: none;
+    background-color: black;
+}
+
+.WordLabel {
+    font-family: 'din_regular','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight:normal;
+    font-size:20px;
+    text-align:center;    
+    color:white;
+	cursor:default;
+}
+.questionLabel {
+    font-family: 'din_regular','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    text-align: center; 
+    font-size: 24px; 
+    margin-top: -20px;
+    color: #e75545;
+}
+
+strong {
+    font-family:'din_bold','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}

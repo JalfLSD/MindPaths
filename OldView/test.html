@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Static/js/jquery.js"></script>
+    <script src="Static/js/jit.js"></script>
+</head>
+<body>
+    <h1>Test</h1>
+    <div id="graph" style='width: 500px;height: 350px;position: relative; left: -98px; top: 0px;border: solid'>
+        
+    </div>
+    <div id="myGraphContainer" style='width: 500px;height: 350px;position: relative; left: -98px; top: 0px;border: solid'></div>
+    <script type="text/javascript">
+        //init data
+        var json = {
+            "id": "1",
+            "name": "Actual Word",
+            "data": [],
+            "children" : [
+                {
+                    "id": "2",
+                    "name": "Child word 1",
+                    "data" : []
+                },
+                {
+                    "id": "3",
+                    "name": "Child word 2",
+                    "data" : []
+                }
+            ],            
+        };
+
+        var graph = document.getElementById('myGraphContainer');
+        var w = graph.offsetWidth - 50, h = graph.offsetHeight - 50;
+
+        //init Hypertree
+        var ht = new $jit.Hypertree({
+            //id of the visualization container
+            injectInto: 'graph',
+            //canvas width and height
+            width: w,
+            height: h,
+            //Change node and edge styles such as
+            //color, width and dimensions.
+            Node: {
+                dim: 9,
+                color: "#f00"
+            },
+            Edge: {
+                lineWidth: 2,
+                color: "#088"
+            },
+            
+            onBeforeCompute: function (node) {
+            },
+            
+            //Attach event handlers and add text to the
+            //labels. This method is only triggered on label
+            //creation
+            onCreateLabel: function (domElement, node) {
+                domElement.innerHTML = node.name;
+                $jit.util.addEvent(domElement, 'click', function () {
+                    ht.onClick(node.id, {
+                        onComplete: function () {
+                            ht.controller.onComplete();
+                        }
+                    });
+                });
+            },
+            //Change node styles when labels are placed
+            //or moved.
+            onPlaceLabel: function (domElement, node) {
+                var style = domElement.style;
+                style.display = '';
+                style.cursor = 'pointer';
+                if (node._depth <= 1) {
+                    style.fontSize = "0.8em";
+                    style.color = "#ddd";
+
+                } else if (node._depth == 2) {
+                    style.fontSize = "0.7em";
+                    style.color = "#555";
+
+                } else {
+                    style.display = 'none';
+                }
+
+                var left = parseInt(style.left);
+                var w = domElement.offsetWidth;
+                style.left = (left - w / 2) + 'px';
+            },
+
+            onComplete: function () {
+                
+            }
+        });
+        //load JSON data.
+        ht.loadJSON(json);
+        //compute positions and plot.
+        ht.refresh();
+        //end
+        ht.controller.onComplete();
+    </script>
+</body>
+</html>
