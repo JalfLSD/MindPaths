@@ -1,0 +1,5 @@
+http://pybossa.socientize.eu/pybossa/api/app
+
+ID do Semmantics: 430
+
+http://pybossa.socientize.eu/pybossa/api/app/430/newtask

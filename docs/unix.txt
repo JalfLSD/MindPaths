@@ -1,0 +1,17 @@
+This experiment uses a  video-game in order to create a semantic map where volunteers define the distances between words. Semantic analysis is a major challenge for science and innovation as it's a very complex task requiring advanced models and experts validations.
+
+
+http://societic.ibercivis.es/semantics/static/images/icon.jpg
+
+
+What is the perceived relation between words? 
+
+
+source env/bin/activate
+python setup.py develop
+/etc/init.d/apache2 restart
+
+tail -f /var/log/apache2/error.log
+
+
+http://pybossa.societic.eu/semantics-backend/setup

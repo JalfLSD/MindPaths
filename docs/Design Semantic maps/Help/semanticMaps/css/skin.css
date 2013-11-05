@@ -1,0 +1,70 @@
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+body{
+	font-family: 'Nunito', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	/*font-family: 'Dosis', 'Helvetica Neue',  'Helvetica', 'Arial', sans-serif; sphere typography*/
+	font-size: 15px;
+	text-transform: uppercase;
+	color: grey;
+	background-color: white;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container{
+	width: 100%;
+	position: relative;
+		width: 1024px; /**/
+		height: 450px; /**/
+	background: #fff;
+	overflow: hidden;
+	z-index:0;  /**/
+}
+.clr{
+	clear: both;
+	padding: 0;
+	height: 0;
+	margin: 0;
+}
+
+.support-note span{
+	color: #ac375d;
+	font-size: 15px;
+	display: none;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px 0;
+}
+.no-cssanimations .support-note span.no-cssanimations,
+.no-csstransforms .support-note span.no-csstransforms,
+.no-csstransforms3d .support-note span.no-csstransforms3d,
+.no-csstransitions .support-note span.no-csstransitions{
+	display: block;
+}

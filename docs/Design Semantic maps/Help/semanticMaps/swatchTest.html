@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Semantic maps</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="stylesheet" type="text/css" href="css/skin.css" />
+        <link rel="stylesheet" type="text/css" href="css/swatchWords.css" />
+		
+		<!-- <link href='http://fonts.googleapis.com/css?family=Dosis:600' rel='stylesheet' type='text/css'> sphere typography -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Nunito:400' rel='stylesheet' type='text/css'>        	
+		<script type="text/javascript" src="js/modernizr.js"></script> 
+		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+    </head>
+    <body>
+        <div class="container">
+		
+			<header>
+		
+				<div class="support-note"><!-- let's check browser support with modernizr -->
+					<!--span class="no-cssanimations">CSS animations are not supported in your browser</span-->
+					<span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+					<!--span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span-->
+					<span class="no-csstransitions">CSS transitions are not supported in your browser</span>
+					<span class="note-ie">Sorry, only modern browsers.</span>
+				</div>
+				
+			</header>
+			
+			<section>
+				<div id="sw-container" class="sw-container">
+					<div>
+						<h4><span>Watch</span></h4>											
+					</div>
+					<div>
+						<h4><span>Rice</span></h4>											
+					</div>
+					<div>
+						<h4><span>Fragment</span></h4>
+					</div>
+					<div>
+						<h4><span>Small</span></h4>
+					</div>	
+					<div>
+						<h4><span>Tiny</span></h4>
+					</div>	
+					<div>
+						<h4><span>Moment</span></h4>
+					</div>	
+					<div>
+						<h4><span>Productivity</span></h4>
+					</div>	
+					<div>
+						<h4><span>Again</span></h4>
+					</div>
+					<div>
+						<h4><span>Personality</span></h4>											
+					</div>
+					<div>
+						<h4><span>Hour</span></h4>											
+					</div>	
+					<div>
+						<h4><span>Time</span></h4>											
+					</div>
+					<div>
+						<h4><span>Second</span></h4>											
+					</div>
+			
+				</div><!-- sw-container -->
+			</section>
+			
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.swatchWords.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			
+				$( '#sw-container' ).swatchWords( {
+					// number of degrees that is between each item
+					angleInc : -12,
+					// amount in degrees for the opened item's next sibling
+					proximity : -22,
+					neighbor : -12,
+				} );
+			
+			});
+		</script>
+    </body>
+</html>
