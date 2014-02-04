@@ -1,0 +1,8 @@
+activate_this = '/home/adabriand/pybossa_apps/mindpaths/env/bin/activate_this.py'
+execfile(activate_this, dict(__file__=activate_this))
+import logging, sys
+sys.stdout = sys.stderr
+logging.basicConfig(stream=sys.stderr)
+sys.path.insert(0,'/home/adabriand/pybossa_apps/mindpaths/semantics_server/')
+# Run the web-app
+from semantics_server import app as application

@@ -1,0 +1,7 @@
+{
+	"app_id" : "649452038434096",
+	"shortname" : "Semantics",
+	"endpoint" : "/pybossa",
+	"facebook_permissions_type" : "email",
+	"server_name" : "localhost"
+}
