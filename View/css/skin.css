@@ -1,19 +1,19 @@
 @font-face {
 	font-family: 'din_bold';
-	src: url('http://societic.ibercivis.es/semantics/fonts/Din_bold/din_bold.eot'); /* IE9 Compat Modes */
-	src: url('http://societic.ibercivis.es/semantics/fonts/Din_bold/din_bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	     url('http://societic.ibercivis.es/semantics/fonts/Din_bold/din_bold.woff') format('woff'), /* Modern Browsers */
-	     url('http://societic.ibercivis.es/semantics/fonts/Din_bold/din_bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-	     url('http://societic.ibercivis.es/semantics/fonts/Din_bold/din_bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+	src: url('https://pybossa.socientize.eu/semantics/fonts/Din_bold/din_bold.eot'); /* IE9 Compat Modes */
+	src: url('https://pybossa.socientize.eu/semantics/fonts/Din_bold/din_bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('https://pybossa.socientize.eu/semantics/fonts/Din_bold/din_bold.woff') format('woff'), /* Modern Browsers */
+	     url('https://pybossa.socientize.eu/semantics/fonts/Din_bold/din_bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('https://pybossa.socientize.eu/semantics/fonts/Din_bold/din_bold.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
 	font-family: 'din_regular';
-	src: url('http://societic.ibercivis.es/semantics/fonts/Din_regular/din_regular.eot');
-	src: url('http://societic.ibercivis.es/semantics/fonts/Din_regular/din_regular.eot?#iefix') format('embedded-opentype'),
-	     url('http://societic.ibercivis.es/semantics/fonts/Din_regular/din_regular.woff') format('woff'),
-	     url('http://societic.ibercivis.es/semantics/fonts/Din_regular/din_regular.ttf')  format('truetype'), 
-	     url('http://societic.ibercivis.es/semantics/fonts/Din_regular/din_regular.svg#svgFontName') format('svg'); 
+	src: url('https://pybossa.socientize.eu/semantics/fonts/Din_regular/din_regular.eot');
+	src: url('https://pybossa.socientize.eu/semantics/fonts/Din_regular/din_regular.eot?#iefix') format('embedded-opentype'),
+	     url('https://pybossa.socientize.eu/semantics/fonts/Din_regular/din_regular.woff') format('woff'),
+	     url('https://pybossa.socientize.eu/semantics/fonts/Din_regular/din_regular.ttf')  format('truetype'), 
+	     url('https://pybossa.socientize.eu/semantics/fonts/Din_regular/din_regular.svg#svgFontName') format('svg'); 
 }
 
 *,
