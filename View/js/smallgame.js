@@ -1,5 +1,5 @@
 ﻿// Settings
-var serverUrl = "http://societic.ibercivis.es/semantics-backend/";
+var serverUrl = "https://pybossa.socientize.eu/semantics-backend/";
 // Game State
 var taskId = 0;
 var activeWord = "";
@@ -59,7 +59,7 @@ function startOver() {
         return;
 
     setWordBarItem(steps, true, adjustCase(startWord));
-    $("#wordImg" + steps).attr("src", "http://societic.ibercivis.es/semantics/images/endrow.png");
+    $("#wordImg" + steps).attr("src", "https://pybossa.socientize.eu/semantics/images/endrow.png");
 
     // Reset all used path
     for (var k = 0; k < pathIndex; k++) {
@@ -221,11 +221,11 @@ function setWordBarItem(index, checked, word) {
     var image = "#wordImg" + index;
     var label = "#wordLbl" + index;
     if (checked) {
-        $(image).attr("src", "http://societic.ibercivis.es/semantics/images/activeRow.png");
+        $(image).attr("src", "https://pybossa.socientize.eu/semantics/images/activeRow.png");
         $(label).css({ color: '#2B3126' });
     }
     else {
-        $(image).attr("src", "http://societic.ibercivis.es/semantics/images/empty_row.png");
+        $(image).attr("src", "https://pybossa.socientize.eu/semantics/images/empty_row.png");
         $(label).css({ color: 'white' });
     }
     $(label).text(word);
@@ -233,7 +233,7 @@ function setWordBarItem(index, checked, word) {
 
 function setWordBarEndItem(index) {
     var image = "#wordImg" + index;
-    $(image).attr("src", "http://societic.ibercivis.es/semantics/images/endrow.png");
+    $(image).attr("src", "https://pybossa.socientize.eu/semantics/images/endrow.png");
 
 }
 
