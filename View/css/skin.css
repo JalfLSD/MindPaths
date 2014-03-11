@@ -207,3 +207,7 @@ a{
 strong {
     font-family:'din_bold','Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
+
+#info-button:focus { 
+	outline: 0;
+}
