@@ -186,7 +186,9 @@
 			$("#task-long-description").hide();
 			$("#task-template").show();
 			$("#task-template").load(
-					"//" + server_name + "/semantics/template.html");
+					"//" + server_name + "/semantics/template.html", function() {
+						$("#survey-link").attr("href", "http://survey20.zsi.at/index.php/859664/lang-en");
+					});
 		}
 	</script>
 </body>
